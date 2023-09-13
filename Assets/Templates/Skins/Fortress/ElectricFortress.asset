@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a972d0117e6e6d940acc8dac8eadf9a1, type: 3}
+  m_Name: ElectricFortress
+  m_EditorClassIdentifier: 
+  name: Electric Fortress
+  particleEffect: {fileID: 8298336114332586732, guid: 84e14911865fee94b83f20108a5b291f, type: 3}
+  price: 7000
+  type: 1
+  mainBody: {fileID: 21300000, guid: d5757b324008d174cb00d18d5793c49a, type: 3}
+  LeftString: {fileID: 0}
+  RightString: {fileID: 0}
+  LeftBolt: {fileID: 0}
+  RightBolt: {fileID: 0}
+  PS_Scale: 1
+  PS_Position: {x: 0, y: 0, z: 0}

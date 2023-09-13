@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ac5d81429c07647b438a5cf8219fb8, type: 3}
+  m_Name: 3-41
+  m_EditorClassIdentifier: 
+  name: 3-41
+  upgradesPerWave: 1b0000001e000000
+  firstClearRewards: 600
+  clearRewards: 200
+  Enemies:
+  - {fileID: 11400000, guid: 113c57e1be8e98a419f5311ad8afa035, type: 2}
+  - {fileID: 11400000, guid: ee36fa517c03f744ab71c210ced38798, type: 2}
+  - {fileID: 11400000, guid: fad9dfe0b0f46fb4aa9d8c00afa8068f, type: 2}
+  - {fileID: 11400000, guid: e76ab5b6cd3474b44ac48a7dd98e85e2, type: 2}
+  - {fileID: 11400000, guid: f60d115707288ae49a322fbd9e675f75, type: 2}
+  - {fileID: 11400000, guid: 91b982f8191001a4f83f8eb37815f2bf, type: 2}
+  - {fileID: 11400000, guid: 70494175fe69e914980b4f3a5e100e0d, type: 2}
+  - {fileID: 11400000, guid: 1f55a80fd2fc8ca4abb1f5489711c024, type: 2}
+  - {fileID: 11400000, guid: 02a28308fb62dc7499c464fe59ecbf52, type: 2}
+  - {fileID: 11400000, guid: 26080b9d2e1b88148b0ed6a5c9f42d85, type: 2}
+  - {fileID: 11400000, guid: 84b2d91cc9b37c64ab20abf6777fda3d, type: 2}
+  - {fileID: 11400000, guid: 6f4b329a482b1af4391b68e635f391b6, type: 2}
+  - {fileID: 11400000, guid: 6fffb714393d6824bb095b98bf5ea29e, type: 2}
+  - {fileID: 11400000, guid: c57394eb7c357a2429d429a1cb116a47, type: 2}
+  stageInWorld: 0300000029000000

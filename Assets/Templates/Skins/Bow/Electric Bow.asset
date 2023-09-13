@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a972d0117e6e6d940acc8dac8eadf9a1, type: 3}
+  m_Name: Electric Bow
+  m_EditorClassIdentifier: 
+  name: Electric Bow
+  particleEffect: {fileID: 1835238280702059913, guid: 107c63ff9727b564baefa4291741aa86, type: 3}
+  price: 8000
+  type: 0
+  mainBody: {fileID: 7651635324247454810, guid: feaa156ceef418e429a4bebfbd9a0c8e, type: 3}
+  LeftString: {fileID: 0}
+  RightString: {fileID: 0}
+  LeftBolt: {fileID: 2609001378610763419, guid: feaa156ceef418e429a4bebfbd9a0c8e, type: 3}
+  RightBolt: {fileID: -8941488682509169998, guid: feaa156ceef418e429a4bebfbd9a0c8e, type: 3}
+  PS_Scale: 1
+  PS_Position: {x: 0, y: 0, z: 0}

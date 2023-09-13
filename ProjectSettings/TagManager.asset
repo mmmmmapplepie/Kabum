@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - TauntEnemy
+  - Enemy
+  - Bullet
+  - MainBow
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - ParticleEffect
+  - Water
+  - UI
+  - UIEffects
+  - Background
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - PostProcessing
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: MainBow
+    uniqueID: 1989929121
+    locked: 0
+  - name: Effects
+    uniqueID: 3382639871
+    locked: 0
+  - name: UI
+    uniqueID: 2739453577
+    locked: 0
+  - name: UIEffects
+    uniqueID: 219793509
+    locked: 0

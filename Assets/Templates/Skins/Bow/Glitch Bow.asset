@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a972d0117e6e6d940acc8dac8eadf9a1, type: 3}
+  m_Name: Glitch Bow
+  m_EditorClassIdentifier: 
+  name: Glitch Bow
+  particleEffect: {fileID: 3228674900905711121, guid: 912604352902da240905103ede547b78, type: 3}
+  price: 8000
+  type: 0
+  mainBody: {fileID: 8231767729954377329, guid: 11eb52be8459e1c47a1191f927d6b2ff, type: 3}
+  LeftString: {fileID: -7814992597872909257, guid: 11eb52be8459e1c47a1191f927d6b2ff, type: 3}
+  RightString: {fileID: -1992948623671077522, guid: 11eb52be8459e1c47a1191f927d6b2ff, type: 3}
+  LeftBolt: {fileID: -2404707038012002030, guid: 11eb52be8459e1c47a1191f927d6b2ff, type: 3}
+  RightBolt: {fileID: 7882558753989733477, guid: 11eb52be8459e1c47a1191f927d6b2ff, type: 3}
+  PS_Scale: 1
+  PS_Position: {x: 0, y: 0, z: 0}

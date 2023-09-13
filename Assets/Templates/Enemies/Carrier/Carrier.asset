@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a766b1c3ca81cf742bac0749207a4d1a, type: 3}
+  m_Name: Carrier
+  m_EditorClassIdentifier: 
+  name: Carrier
+  enemyDescription: 'One of the rarer bombs only appearing on large battles. The
+    carrier constantly teleport other bombs into the battle. '
+  sprite: {fileID: 21300000, guid: 66fa54121d762a043a6d6a7895fa0023, type: 3}
+  Boss: 1
+  enemyPrefab: {fileID: 3112957866081141623, guid: 524485ff995984b4e94a9f6297ba733c, type: 3}
+  Life: 1500
+  Damage: 120
+  Speed: 0.05
+  MaxShield: 150
+  Shield: 0
+  Armor: 2
+  Taunt: 0

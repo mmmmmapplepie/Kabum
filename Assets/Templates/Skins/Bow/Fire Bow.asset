@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a972d0117e6e6d940acc8dac8eadf9a1, type: 3}
+  m_Name: Fire Bow
+  m_EditorClassIdentifier: 
+  name: Fire Bow
+  particleEffect: {fileID: 915976128027885468, guid: 4f174cf982540a74cae716e299517413, type: 3}
+  price: 1000
+  type: 0
+  mainBody: {fileID: -8802538617876834981, guid: e1e1a6846925ee9419c91d9117833b6a, type: 3}
+  LeftString: {fileID: 3327809026863234590, guid: e1e1a6846925ee9419c91d9117833b6a, type: 3}
+  RightString: {fileID: -584679513842632782, guid: e1e1a6846925ee9419c91d9117833b6a, type: 3}
+  LeftBolt: {fileID: -7809118146436516840, guid: e1e1a6846925ee9419c91d9117833b6a, type: 3}
+  RightBolt: {fileID: 229779245338556459, guid: e1e1a6846925ee9419c91d9117833b6a, type: 3}
+  PS_Scale: 1
+  PS_Position: {x: 0, y: 0, z: 0}

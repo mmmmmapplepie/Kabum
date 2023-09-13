@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a766b1c3ca81cf742bac0749207a4d1a, type: 3}
+  m_Name: HyperArmory
+  m_EditorClassIdentifier: 
+  name: Hyper Armory
+  enemyDescription: 'A very dangerous bomb with high capability in providing allys
+    with armor. (they stack) '
+  sprite: {fileID: 21300000, guid: 3a14df3c1165d0c46aa33f904f0397fd, type: 3}
+  Boss: 0
+  enemyPrefab: {fileID: 3112957866081141623, guid: 47232923144cf654d9bdc7a9e268ec76, type: 3}
+  Life: 1200
+  Damage: 50
+  Speed: 0.1
+  MaxShield: 5
+  Shield: 5
+  Armor: 10
+  Taunt: 0

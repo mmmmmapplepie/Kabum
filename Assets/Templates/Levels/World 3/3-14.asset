@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ac5d81429c07647b438a5cf8219fb8, type: 3}
+  m_Name: 3-14
+  m_EditorClassIdentifier: 
+  name: 3-14
+  upgradesPerWave: 08000000
+  firstClearRewards: 350
+  clearRewards: 100
+  Enemies:
+  - {fileID: 11400000, guid: ee36fa517c03f744ab71c210ced38798, type: 2}
+  - {fileID: 11400000, guid: 113c57e1be8e98a419f5311ad8afa035, type: 2}
+  - {fileID: 11400000, guid: fad9dfe0b0f46fb4aa9d8c00afa8068f, type: 2}
+  - {fileID: 11400000, guid: 70494175fe69e914980b4f3a5e100e0d, type: 2}
+  - {fileID: 11400000, guid: 86fcb5d49c7537e428e5a1c1a8cd2c3a, type: 2}
+  stageInWorld: 030000000e000000

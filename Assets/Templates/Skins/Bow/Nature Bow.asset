@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a972d0117e6e6d940acc8dac8eadf9a1, type: 3}
+  m_Name: Nature Bow
+  m_EditorClassIdentifier: 
+  name: Nature Bow
+  particleEffect: {fileID: 2561970215222062173, guid: 3feb85e880a622f4b850041997424dbe, type: 3}
+  price: 12000
+  type: 0
+  mainBody: {fileID: 1259479803489664925, guid: 3a14698fc6a5a774d8d9de99d9d62a17, type: 3}
+  LeftString: {fileID: 6088045724705984950, guid: 3a14698fc6a5a774d8d9de99d9d62a17, type: 3}
+  RightString: {fileID: -3369650253607045907, guid: 3a14698fc6a5a774d8d9de99d9d62a17, type: 3}
+  LeftBolt: {fileID: -8875343341493227419, guid: 3a14698fc6a5a774d8d9de99d9d62a17, type: 3}
+  RightBolt: {fileID: -8443888827839594328, guid: 3a14698fc6a5a774d8d9de99d9d62a17, type: 3}
+  PS_Scale: 1
+  PS_Position: {x: 0, y: 0, z: 0}

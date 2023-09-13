@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6842064149280478062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6842064149280478050}
+  - component: {fileID: 6842064149280478049}
+  - component: {fileID: 6842064149280478048}
+  - component: {fileID: 6842064149280478063}
+  m_Layer: 0
+  m_Name: GameplaySkinManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6842064149280478050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842064149280478062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3315221, y: -3.5424185, z: -1.290782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6842064149280478049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842064149280478062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c30ec6ad8792a48b60aeb121b11b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listOfBowSkins:
+  - {fileID: 11400000, guid: 6aa5333760bf65240b6bdf50ac21c2e4, type: 2}
+  - {fileID: 11400000, guid: 9101a46f3b5f7f444a4c7a292bbf19a9, type: 2}
+  - {fileID: 11400000, guid: 36453ad68794da04299c508f0316bbd8, type: 2}
+  - {fileID: 11400000, guid: 521ef277292515e488aca4469d2ccea5, type: 2}
+  - {fileID: 11400000, guid: bd6d8645f6e3baa4987ec3b19f662fa1, type: 2}
+  - {fileID: 11400000, guid: 3b7c84791d7f01441a52e0739d23df2b, type: 2}
+  - {fileID: 11400000, guid: 7cdac70c20dba574cbfd9210b9f14f42, type: 2}
+  - {fileID: 11400000, guid: a746bf85734c2ad4bada56b1e821e2c5, type: 2}
+  - {fileID: 11400000, guid: 351d0c0f08da0014eb62bf69a8eb3774, type: 2}
+  - {fileID: 11400000, guid: cf77976a628f06747b1a5f1627cad0a4, type: 2}
+  - {fileID: 11400000, guid: 276f7faba8c10e243b327c3a10a5a73c, type: 2}
+  - {fileID: 11400000, guid: 00b6a956c4ca61f4c8ed23a68759f3b1, type: 2}
+  - {fileID: 11400000, guid: 02324d84ad1e6ca4aba373504927539a, type: 2}
+  - {fileID: 11400000, guid: f00aa365ece33ed44b73351d83ff1291, type: 2}
+  - {fileID: 11400000, guid: 64fc64ade3626ab49b2c23b9b84569a2, type: 2}
+  - {fileID: 11400000, guid: 2199c1f43c57eaf41806c1de12b147fc, type: 2}
+  Bow1: {fileID: 0}
+  Bow2: {fileID: 0}
+  helpers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &6842064149280478048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842064149280478062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a3d748da1b43e489a97acfd4869c3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listOfBulletSkins:
+  - {fileID: 11400000, guid: 55ff39de246a72f419913590ec3ff23b, type: 2}
+  - {fileID: 11400000, guid: 461108eeb526c79459a3b3af3954362b, type: 2}
+  - {fileID: 11400000, guid: a6637c5e8d8e6cf49b2ecfc003606ad0, type: 2}
+  - {fileID: 11400000, guid: a07870796e1ab51499e386e509a762e2, type: 2}
+  - {fileID: 11400000, guid: 45d9f7c6730a4d645a3deb74bde3773c, type: 2}
+  - {fileID: 11400000, guid: a042223a0845ca243a2b191296ee9a6d, type: 2}
+  - {fileID: 11400000, guid: fd74b20770dbc744495a8e77684c5be0, type: 2}
+  - {fileID: 11400000, guid: 50f62eb71cbd4ea4384a0c591a9ee248, type: 2}
+  - {fileID: 11400000, guid: 12af908d4bdb37f47971a89e0b8dc7c9, type: 2}
+  - {fileID: 11400000, guid: 4d0dd8534be411749b8edd5bd9db55b9, type: 2}
+  - {fileID: 11400000, guid: 71ac3a572a8890d408668286f1694f1c, type: 2}
+  - {fileID: 11400000, guid: 754f3bdf26c5d864ea9134be97a76bed, type: 2}
+  - {fileID: 11400000, guid: 5ef5617959aee6542a3845c4c5716601, type: 2}
+  - {fileID: 11400000, guid: 99f17ba1983bf3647afe7d82bae67595, type: 2}
+  - {fileID: 11400000, guid: 53173b9fb95718e42afada08c899c896, type: 2}
+  - {fileID: 11400000, guid: 993e8ee07582757419af82e1142a16cb, type: 2}
+--- !u!114 &6842064149280478063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6842064149280478062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151834689424dba4dbb1097ae995750d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listOfFortressSkins:
+  - {fileID: 11400000, guid: 71ccf4c2ef5b024468d3bb1b68244901, type: 2}
+  - {fileID: 11400000, guid: 126ca83284b3b1740a4ac61f3aa504e1, type: 2}
+  - {fileID: 11400000, guid: 07f99d5fdd71070428179fcdf434fefb, type: 2}
+  - {fileID: 11400000, guid: 9c6aaedff5fc4754e8ef06be31efff64, type: 2}
+  - {fileID: 11400000, guid: 373b2040caee5894e99252f0ad747265, type: 2}
+  - {fileID: 11400000, guid: c8bdebcb6e7acbd469e4406d8bc1bb85, type: 2}
+  - {fileID: 11400000, guid: 08e9b9713ee358144ac99e4b50f18e4a, type: 2}
+  - {fileID: 11400000, guid: 2c4e411e7bbb55442af2f23d19f101a0, type: 2}
+  - {fileID: 11400000, guid: ca14600ca35308b468ae256f99e8aa01, type: 2}
+  - {fileID: 11400000, guid: 16b0e35e0675ee248aded99c25c6813b, type: 2}
+  - {fileID: 11400000, guid: 50af9b836fba87b4ab17740b48711c33, type: 2}
+  - {fileID: 11400000, guid: d03301f38a92b024aa711cb1d2bb85da, type: 2}
+  - {fileID: 11400000, guid: 078d0d1c9f7fe234fb93ef8fd63a5acf, type: 2}
+  - {fileID: 11400000, guid: 0734142e5e266774884b1a52733409cd, type: 2}
+  - {fileID: 11400000, guid: fd783d9ff49ffe342ad859c2fec9f065, type: 2}
+  - {fileID: 11400000, guid: 9615025f48d515c4ab74ace8c2316504, type: 2}
+  fortress: {fileID: 0}
