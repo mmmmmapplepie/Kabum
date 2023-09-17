@@ -56,12 +56,6 @@ public class EndlessGameDefeat : MonoBehaviour, DefeatScripts {
     audio.PlayAudio("Click");
     SceneManager.LoadScene("GameMode");
   }
-  public void ContinueAfterAd() {
-    audio.PlayAudio("Click");
-    AdButton.GetComponent<Button>().gameObject.SetActive(false);
-    LifeManager.CurrentLife = BowManager.MaxLife;
-    gameObject.SetActive(false);
-  }
   void OnDisable() {
     BowManager.GunsReady = true;
     Time.timeScale = 1f;

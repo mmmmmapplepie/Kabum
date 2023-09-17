@@ -24,12 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5197789660241935668}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5197789660741548067}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5197789660241935670
 MonoBehaviour:
@@ -124,12 +125,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5197789660336990335}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5197789660741548067}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5197789660336990305
 MonoBehaviour:
@@ -146,7 +148,7 @@ MonoBehaviour:
   SoundList:
   - name: Click
     clip: {fileID: 8300000, guid: 3ab90419f55bcb844bf360f07f9865f8, type: 3}
-    volume: 0.1
+    volume: 0.08
     pitch: 1
     loop: 0
     playOnAwake: 1
@@ -186,7 +188,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Victory
     clip: {fileID: 8300000, guid: 50cf04c77d9b55943ae5b5a503ef7eec, type: 3}
-    volume: 0.5
+    volume: 0.2
     pitch: 1.2
     loop: 0
     playOnAwake: 1
@@ -194,7 +196,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Defeat
     clip: {fileID: 8300000, guid: 80ccafe6e8198314eb76292046f927af, type: 3}
-    volume: 0.5
+    volume: 0.3
     pitch: 1
     loop: 0
     playOnAwake: 1
@@ -224,15 +226,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5197789660741548065}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5197789661519189607}
   - {fileID: 5197789660241935671}
   - {fileID: 5197789660336990334}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5197789660741548064
 MonoBehaviour:
@@ -270,12 +273,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5197789661519189604}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5197789660741548067}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5197789661519189606
 MonoBehaviour:

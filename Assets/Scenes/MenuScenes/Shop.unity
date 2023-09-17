@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -229}
+  m_AnchoredPosition: {x: 0, y: -183}
   m_SizeDelta: {x: 742.45, y: 154.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4502397
@@ -390,6 +390,7 @@ MonoBehaviour:
   TimerAdButtonDisplay: {fileID: 1748235645}
   NoNetwork: {fileID: 1606142420}
   rewardAvailable: 0
+  timerNotChecked: 1
 --- !u!1 &145509397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,7 +1836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 192}
+  m_AnchoredPosition: {x: 0, y: 238}
   m_SizeDelta: {x: 742.45, y: 154.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &743370553
@@ -1871,11 +1872,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'All items in the shop are skins and do not contribute to battle prowess.
+  m_Text: 'All items in the shop are skins and do not contribute to battle in any
+    way.
 
 
-    The
-    ingame currency used here is the same as those used for upgrades.'
+    The ingame currency used here is the same as those used for upgrades.'
 --- !u!222 &743370554
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2830,7 +2831,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 24:41
+  m_Text: 24:00
 --- !u!222 &1223729338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3071,7 +3072,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -464}
+  m_AnchoredPosition: {x: 0, y: -418}
   m_SizeDelta: {x: 429.67, y: 154.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1529297059
@@ -3107,7 +3108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You can claim a reward every 24 hours.
+  m_Text: (You can claim a reward every 24 hours)
 --- !u!222 &1529297060
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3287,7 +3288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1572090915
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3526,7 +3527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1748235646
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4034,6 +4035,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialPanel: {fileID: 1108557107}
+  hasPlayerPrefs: 1
+  playerPrefKey: ShopTutorial
 --- !u!1 &2007620376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,7 +4150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 608}
+  m_AnchoredPosition: {x: 0, y: 628}
   m_SizeDelta: {x: 742.45, y: 154.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045487183

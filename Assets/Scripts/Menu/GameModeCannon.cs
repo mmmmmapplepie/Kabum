@@ -82,24 +82,20 @@ public class GameModeCannon : MonoBehaviour {
 		AsyncOperation asyncScene = SceneManager.LoadSceneAsync(sceneName);
 		asyncScene.allowSceneActivation = false;
 		float loadedAmount = 0f;
-		print(loadPercent.text);
 		while (!asyncScene.isDone) {
 			float percent = asyncScene.progress * 100f;
 			if (loadedAmount < 100f && percent >= 90f) {
-				print(loadedAmount);
 				loadPercent.text = loadedAmount.ToString() + "%";
 				loadedAmount += 5f;
 				yield return null;
 			}
 			if (loadedAmount >= 99f && percent >= 90f && loadReady == false) {
-				print(loadedAmount);
 				loadTouchContinue.SetActive(true);
 				loadReady = true;
 				loadPercent.text = "100%";
 				yield return null;
 			}
 			if (touched == true && loadedAmount >= 99f) {
-				print(loadedAmount);
 				loadTouchContinue.GetComponent<Animator>().enabled = false;
 				yield return new WaitForSecondsRealtime(0.3f);
 				asyncScene.allowSceneActivation = true;

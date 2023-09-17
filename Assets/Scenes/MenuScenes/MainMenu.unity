@@ -575,7 +575,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2, y: 2}
+  m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222769037
 MonoBehaviour:
@@ -1204,6 +1204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ProgressTrigger: 1
   guidePanel: {fileID: 222769035}
+  hasPlayerPrefs: 0
+  playerPrefKey: 
 --- !u!1 &312384835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 49.000015}
+  m_AnchoredPosition: {x: 0, y: 72.000046}
   m_SizeDelta: {x: 758.54, y: 190.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368404649
@@ -1960,7 +1962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -161}
+  m_AnchoredPosition: {x: 0, y: -137.99997}
   m_SizeDelta: {x: 758.54, y: 190.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831897005
@@ -3041,7 +3043,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -378}
+  m_AnchoredPosition: {x: 0, y: -354.99997}
   m_SizeDelta: {x: 758.54, y: 291.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288788168
@@ -5294,7 +5296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 295.99997}
+  m_AnchoredPosition: {x: 0, y: 319}
   m_SizeDelta: {x: 758.54, y: 271.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1986216280
@@ -5691,10 +5693,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2763204617199916115, guid: 0ac8a061463770045960d7edf1ec38da, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2763204617199916115, guid: 0ac8a061463770045960d7edf1ec38da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -5738,8 +5736,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 827866737, guid: 0ac8a061463770045960d7edf1ec38da, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -5760,10 +5757,6 @@ PrefabInstance:
     - target: {fileID: 5197789660741548065, guid: c6d1c324387bc464e853e5af2aac3213, type: 3}
       propertyPath: m_Name
       value: AudioManagerGeneral
-      objectReference: {fileID: 0}
-    - target: {fileID: 5197789660741548067, guid: c6d1c324387bc464e853e5af2aac3213, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5197789660741548067, guid: c6d1c324387bc464e853e5af2aac3213, type: 3}
       propertyPath: m_LocalPosition.x
