@@ -10,7 +10,6 @@ public class W3Upg : MonoBehaviour {
   [SerializeField]
   GameObject IconPrefab;
   string[] world3Upg = new string[4] { "Nuke", "ChainExplosion", "PullEnemies", "DoubleGun" };
-  //so the thing that we want everythngiaodswifn;lkWWWWWWWWWWWWWWWWWWWWWWWWWWWW WWWWWWWWWWWWWWW WWWWWWWWWWWWWWW WWWWWWWWWWWWWW w WWWWWWWWWWWWWWWWWWWW wWWWWWWWWWWWWWWW
   int tempupgnum = 0;
   void Update() {
     if (UpgradesEquipped.tempUpgHolder.Count != tempupgnum) {

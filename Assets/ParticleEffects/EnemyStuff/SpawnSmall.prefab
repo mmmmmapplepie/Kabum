@@ -1369,7 +1369,7 @@ ParticleSystem:
         key0: {r: 0.9968486, g: 0, b: 1, a: 0}
         key1: {r: 0.95692796, g: 0.7777778, b: 1, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 1}
-        key3: {r: 0, g: 0, b: 0, a: 0.3372549}
+        key3: {r: 1, g: 1, b: 1, a: 0.3372549}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
@@ -1391,7 +1391,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 4
         m_NumAlphaKeys: 6
       minGradient:

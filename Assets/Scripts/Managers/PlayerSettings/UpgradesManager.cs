@@ -2,8 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 public class UpgradesManager {
 	public static int[] pricing = { 0, 50, 60, 70, 80, 90, 100, 120, 140, 170, 0 };
-	//translates to 880 max for pricing "1" upgrade.
-	//totals to 61600 in total for ALL upgrades as of 23rd of march 2023.
 	public static int DoubleGunPricing = 10000;
 
 	public static Dictionary<string, int[]> UpgradeOptions = new Dictionary<string, int[]>();
@@ -17,7 +15,7 @@ public class UpgradesManager {
 		UpgradeOptions[key] = temp;
 	}
 
-	//[currentlvl, openlvls, pricing, upgradespacerequired]
+	//[currentlvl, unlockedlvls, pricing, upgradespacerequired] for each upgrade
 	static void dictionaryBaseLog() {
 		//world 1  slots 13
 		UpgradeOptions.Add("UpgradeSlot", new int[] { 1, 1, 10, 0 });
@@ -66,11 +64,11 @@ public class UpgradesManager {
 		} else {
 			UpgradeOptions.Clear();
 			dictionaryBaseLog();
-			SettingsManager.world = new int[2] { 1, 1 };
+			SettingsManager.world = new int[2] { 3, 46 };
 			SettingsManager.currentFocusLevelTransform = new float[2] { 0, 0 };
 			SettingsManager.endlessOriginalHS = 0f;
 			SettingsManager.endlessUpgradedHS = 0f;
-			MoneyManager.money = 2000;
+			MoneyManager.money = 200000;
 			SettingsManager.currBowSkin = "Wooden Bow";
 			SettingsManager.currBulletSkin = "Wooden Bullet";
 			SettingsManager.currFortressSkin = "Wooden Fortress";
