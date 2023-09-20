@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Fire Bow
   particleEffect: {fileID: 915976128027885468, guid: 4f174cf982540a74cae716e299517413, type: 3}
-  price: 1000
+  price: 10000
   type: 0
   mainBody: {fileID: -8802538617876834981, guid: e1e1a6846925ee9419c91d9117833b6a, type: 3}
   LeftString: {fileID: 3327809026863234590, guid: e1e1a6846925ee9419c91d9117833b6a, type: 3}

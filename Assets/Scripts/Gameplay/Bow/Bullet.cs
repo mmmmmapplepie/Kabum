@@ -49,12 +49,10 @@ public class Bullet : MonoBehaviour, IBullet {
 		audioManager.PlayAudio("PullSound");
 		foreach (Collider2D coll in Enemies) {
 			if (coll.gameObject.tag == "Enemy" || coll.gameObject.tag == "TauntEnemy") {
-				if (coll.gameObject == gameObject) {
-					continue;
-				}
 				float force = 0f;
 				if ((coll.transform.root.position.x - transform.position.x) != 0f) {
 					float diff = coll.transform.root.position.x - transform.position.x;
+					if (Mathf.Pow((4.5f - Mathf.Abs(diff)), 1.5f) == 0 || Mathf.Abs(diff) > 4.5f) return;
 					float forcemag = 1f / Mathf.Pow((4.5f - Mathf.Abs(diff)), 1.5f);
 					if (diff > 0f) {
 						force = -forcemag;
@@ -62,9 +60,8 @@ public class Bullet : MonoBehaviour, IBullet {
 						force = forcemag;
 					}
 				}
-
 				Rigidbody2D rb = coll.transform.root.GetComponent<Rigidbody2D>();
-				rb.AddForce(new Vector2(Mathf.Log(GetComponent<Rigidbody2D>().velocity.magnitude + 1) * force * pull, 0f), ForceMode2D.Impulse);
+				rb.AddForce(new Vector2(Mathf.Log(GetComponent<Rigidbody2D>().velocity.magnitude + 1) * force * pull * 0.2f, 0f), ForceMode2D.Impulse);
 			}
 		}
 	}

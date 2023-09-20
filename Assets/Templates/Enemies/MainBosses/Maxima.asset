@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Maxima
   enemyDescription: The pinnacle of bombs. First phase boasts strong reflective damage.
-    Second phase summons dangerous bombs
+    Second phase summons dangerous bombs.
   sprite: {fileID: 21300000, guid: 19fbec4ed606b77429ece0630933f63f, type: 3}
   Boss: 2
   enemyPrefab: {fileID: 3112957866081141623, guid: a3f2de2d15c022f44936534948166524, type: 3}

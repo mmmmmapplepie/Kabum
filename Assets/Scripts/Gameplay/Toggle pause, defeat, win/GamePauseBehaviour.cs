@@ -16,6 +16,7 @@ public class GamePauseBehaviour : MonoBehaviour {
 	public static bool Pausable = true;
 	bool pausableCheck = true;
 	new AudioManagerUI audio;
+
 	void Awake() {
 		audio = GameObject.FindObjectOfType<AudioManagerUI>();
 		Pausable = true;
@@ -36,7 +37,12 @@ public class GamePauseBehaviour : MonoBehaviour {
 		}
 	}
 
-	// Update is called once per frame
+	void OnEnable() {
+		if (Endless) return;
+		Level data = GameObject.FindObjectOfType<LevelSpawner>().level;
+		FocusLevelUpdater.currentLevel[0] = data.stageInWorld[0];
+		FocusLevelUpdater.currentLevel[1] = data.stageInWorld[1];
+	}
 	void Pause() {
 		audio.PlayAudio("Click");
 		if (BowManager.UsingCooldown == true || Pausable == false) {
@@ -71,9 +77,6 @@ public class GamePauseBehaviour : MonoBehaviour {
 			SceneManager.LoadScene("GameMode");
 			return;
 		}
-		Level data = GameObject.FindObjectOfType<LevelSpawner>().level;
-		FocusLevelUpdater.currentLevel[0] = data.stageInWorld[0];
-		FocusLevelUpdater.currentLevel[1] = data.stageInWorld[1];
 		audio.PlayAudio("Click");
 		gamePaused = false;
 		StartCoroutine(loadSceneAsync("Worlds"));

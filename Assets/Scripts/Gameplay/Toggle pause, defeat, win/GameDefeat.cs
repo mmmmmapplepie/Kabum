@@ -18,6 +18,9 @@ public class GameDefeat : MonoBehaviour, DefeatScripts {
 		StartCoroutine(loseTune());
 		Time.timeScale = 0f;
 		BowManager.GunsReady = false;
+		Level data = GameObject.FindObjectOfType<LevelSpawner>().level;
+		FocusLevelUpdater.currentLevel[0] = data.stageInWorld[0];
+		FocusLevelUpdater.currentLevel[1] = data.stageInWorld[1];
 	}
 	IEnumerator loseTune() {
 		yield return new WaitForSecondsRealtime(0.2f);
@@ -36,9 +39,6 @@ public class GameDefeat : MonoBehaviour, DefeatScripts {
 		}
 	}
 	public void WorldMap() {
-		Level data = GameObject.FindObjectOfType<LevelSpawner>().level;
-		FocusLevelUpdater.currentLevel[0] = data.stageInWorld[0];
-		FocusLevelUpdater.currentLevel[1] = data.stageInWorld[1];
 		audio.PlayAudio("Click");
 		StartCoroutine(loadSceneAsync("Worlds"));
 	}

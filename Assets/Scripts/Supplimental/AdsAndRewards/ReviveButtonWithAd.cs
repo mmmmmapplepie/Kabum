@@ -14,6 +14,7 @@ public class ReviveButtonWithAd : RewardedAdsButton {
 		StartCoroutine(Resume());
 	}
 	IEnumerator Resume() {
+		transform.GetChild(0).gameObject.SetActive(false);
 		yield return new WaitForSecondsRealtime(0.5f);
 		LifeManager.CurrentLife = BowManager.MaxLife;
 		Time.timeScale = 1f;

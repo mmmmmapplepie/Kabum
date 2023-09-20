@@ -54,6 +54,7 @@ public class HelperBullet : MonoBehaviour, IBullet {
 		SetHelperBulletSettings();
 		shootSound(speed * direction.magnitude);
 		GetComponent<Rigidbody2D>().velocity = speed * direction;
+		selfDestroyTimerStartTime = Time.time;
 	}
 	void setHits() {
 		if (BowManager.HitsPerHit > 2) {
@@ -91,9 +92,9 @@ public class HelperBullet : MonoBehaviour, IBullet {
 		if (coll.gameObject.tag == "TauntEnemy" || coll.gameObject.tag == "Enemy") {
 			IDamageable life = coll.transform.root.gameObject.GetComponent<IDamageable>();
 			Transform enemyCenter = coll.transform.root;
-			life.takeDamage(damage * 100f);
+			life.takeDamage(damage);
 			CreateEffect(HitEffect, enemyCenter, enemyCenter.position);
-			for (int i = 0; i < hits * 10; i++) {
+			for (int i = 0; i < hits; i++) {
 				life.takeDamage(damage);
 				if (life.currentLife >= 0f) {
 					CreateEffect(HitEffect, null, enemyCenter.position);

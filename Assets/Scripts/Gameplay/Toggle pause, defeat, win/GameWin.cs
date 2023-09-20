@@ -22,6 +22,8 @@ public class GameWin : MonoBehaviour {
 	}
 	void OnEnable() {
 		data = GameObject.FindObjectOfType<LevelSpawner>().level;
+		FocusLevelUpdater.currentLevel[0] = data.stageInWorld[0];
+		FocusLevelUpdater.currentLevel[1] = data.stageInWorld[1];
 		Time.timeScale = 0f;
 		StartCoroutine(winAudio());
 		instantiatedEffect = Instantiate(winParticleEffect, new Vector3(0f, -11f, 0f), Quaternion.identity);
@@ -51,7 +53,7 @@ public class GameWin : MonoBehaviour {
 		if (thisLevel[0] == 2 && thisLevel[1] < 30) {
 			nextLevelBtn.gameObject.SetActive(true);
 		}
-		if (thisLevel[0] == 3 && thisLevel[1] < 51) {
+		if (thisLevel[0] == 3 && thisLevel[1] < 46) {
 			nextLevelBtn.gameObject.SetActive(true);
 		}
 	}
@@ -72,8 +74,6 @@ public class GameWin : MonoBehaviour {
 
 	}
 	public void WorldMap() {
-		FocusLevelUpdater.currentLevel[0] = data.stageInWorld[0];
-		FocusLevelUpdater.currentLevel[1] = data.stageInWorld[1];
 		audio.PlayAudio("Click");
 		StartCoroutine(loadSceneAsync("Worlds"));
 		Destroy(instantiatedEffect);
