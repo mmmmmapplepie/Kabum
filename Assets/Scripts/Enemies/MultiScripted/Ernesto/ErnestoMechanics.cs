@@ -62,6 +62,7 @@ public class ErnestoMechanics : MonoBehaviour {
 				AffectedEnemies.Add(coll.gameObject);
 				if (coll.transform.root.Find("State").Find("ErnestoMark") == null) {
 					GameObject effect = Instantiate(enemyChosenMarker, coll.transform.root.Find("State").position, Quaternion.identity, coll.transform.root.Find("State"));
+					effect.name = enemyChosenMarker.name;
 					if (coll.transform.root.Find("State").gameObject.GetComponent<Canvas>().isActiveAndEnabled == false) effect.SetActive(false);
 					effect.transform.localScale = largerSprite(coll.transform);
 				}

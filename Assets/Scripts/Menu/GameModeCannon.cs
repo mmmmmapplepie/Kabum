@@ -105,6 +105,7 @@ public class GameModeCannon : MonoBehaviour {
 	}
 
 	public void openSecretStage() {
+		UIaudio.PlayAudio("Click");
 		SceneManager.LoadScene("SecretStage", LoadSceneMode.Single);
 		SceneManager.LoadScene("LevelBase", LoadSceneMode.Additive);
 	}

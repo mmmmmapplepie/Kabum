@@ -72,16 +72,22 @@ public class Sandbox : MonoBehaviour, IGetLevelDataInterface {
 	//few nano and micro
 	IEnumerator wave1() {
 		int i = 0;
-		spawner.spawnEnemyInMap("Ernesto", 0f, 5f, true);
-		spawner.spawnEnemyInMap("HiddenBoss", 0f, 5f, true);
-		// spawner.spawnEnemyInMap("MaxCoupladSeeker", 0f, 5f, true);
-		// spawner.spawnEnemyInMap("MaxCoupladFollower", 0f, 5f, true);
+		// spawner.spawnEnemyInMap("Ernesto", 0f, 0f, true);
+		// spawner.spawnEnemyInMap("HiddenBoss", 0f, 5f, true);
+		// spawner.spawnEnemyInMap("Maxima", 0f, 5f, true);
+		// spawner.spawnEnemyInMap("Minima", 0f, 5f, true);
+		// spawner.spawnEnemyInMap("Gigantodon", 0f, 5f, true);
 
-		while (i < 60) {
-			i++;
-			spawner.spawnEnemy("UltimateBasic", Random.Range(-3f, 3f), 8f);
-			yield return new WaitForSeconds(0.5f);
-		}
+
+		spawner.spawnEnemyInMap("MaxCoupladSeeker", 0f, 5f, true);
+		spawner.spawnEnemyInMap("MaxCoupladFollower", 0f, 5f, true);
+
+		// while (i < 5) {
+		// 	i++;
+		// 	spawner.spawnEnemy("UltimateBasic", Random.Range(-3f, 3f), 8f);
+		// 	yield return new WaitForSeconds(0.5f);
+		// }
+		yield return new WaitForSeconds(60f);
 		spawner.AllTriggerEnemiesCleared();
 	}
 

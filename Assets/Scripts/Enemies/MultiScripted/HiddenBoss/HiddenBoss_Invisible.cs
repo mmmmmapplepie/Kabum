@@ -30,9 +30,13 @@ public class HiddenBoss_Invisible : MonoBehaviour {
 		}
 		try {
 			ernestoMark = imageObject.transform.root.Find("State").Find("ErnestoMark").gameObject;
-			print("hasMark");
 		} catch {
 			ernestoMark = null;
+		}
+		try {
+			imageObject.transform.root.gameObject.GetComponent<TurnInvisibleBase>().ChangeVisibility(Invisible);
+		} catch {
+
 		}
 		if (Invisible) {
 			if (chained != null) chained.SetActive(false);
