@@ -72,7 +72,6 @@ public class SecretStage : MonoBehaviour, IGetLevelDataInterface {
 			spawner.spawnEnemy(name, xpos, 10f);
 		}
 	}
-
 	//few nano and micro
 	IEnumerator wave1() {
 		int i = 0;

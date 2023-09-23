@@ -30,6 +30,7 @@ public class HiddenBoss_Invisible : MonoBehaviour {
 		}
 		try {
 			ernestoMark = imageObject.transform.root.Find("State").Find("ErnestoMark").gameObject;
+			print("hasMark");
 		} catch {
 			ernestoMark = null;
 		}

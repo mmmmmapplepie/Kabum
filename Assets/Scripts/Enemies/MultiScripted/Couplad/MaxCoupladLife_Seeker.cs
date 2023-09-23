@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MaxCoupladLife_Seeker : MonoBehaviour, IDamageable {
@@ -183,6 +182,7 @@ public class MaxCoupladLife_Seeker : MonoBehaviour, IDamageable {
 		Destroy(funct);
 	}
 	IEnumerator deathSequence() {
+		print("deathSequenceofSeeker");
 		dead = true;
 		stopRevive();
 		RemoveAtDeathComponents();
