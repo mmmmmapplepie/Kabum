@@ -182,7 +182,6 @@ public class MaxCoupladLife_Seeker : MonoBehaviour, IDamageable {
 		Destroy(funct);
 	}
 	IEnumerator deathSequence() {
-		print("deathSequenceofSeeker");
 		dead = true;
 		stopRevive();
 		RemoveAtDeathComponents();

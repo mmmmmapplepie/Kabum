@@ -71,7 +71,7 @@ public class Sandbox : MonoBehaviour, IGetLevelDataInterface {
 
 	//few nano and micro
 	IEnumerator wave1() {
-		int i = 0;
+		// int i = 0;
 		// spawner.spawnEnemyInMap("Ernesto", 0f, 0f, true);
 		// spawner.spawnEnemyInMap("HiddenBoss", 0f, 5f, true);
 		// spawner.spawnEnemyInMap("Maxima", 0f, 5f, true);
@@ -79,8 +79,10 @@ public class Sandbox : MonoBehaviour, IGetLevelDataInterface {
 		// spawner.spawnEnemyInMap("Gigantodon", 0f, 5f, true);
 
 
-		spawner.spawnEnemyInMap("MaxCoupladSeeker", 0f, 5f, true);
-		spawner.spawnEnemyInMap("MaxCoupladFollower", 0f, 5f, true);
+		spawner.spawnEnemyInMap("MaxCoupladFollower", 2f, 5f, true);
+		spawner.spawnEnemyInMap("MaxCoupladSeeker", -2f, 5f, true);
+		// spawner.spawnEnemyInMap("CoupladSeeker", 0f, 5f, true);
+		// spawner.spawnEnemyInMap("CoupladFollower", 0f, 5f, true);
 
 		// while (i < 5) {
 		// 	i++;
