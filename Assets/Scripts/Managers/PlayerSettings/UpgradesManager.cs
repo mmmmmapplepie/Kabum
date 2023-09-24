@@ -64,11 +64,11 @@ public class UpgradesManager {
 		} else {
 			UpgradeOptions.Clear();
 			dictionaryBaseLog();
-			SettingsManager.world = new int[2] { 3, 46 };
+			SettingsManager.world = new int[2] { 1, 1 };
 			SettingsManager.currentFocusLevelTransform = new float[2] { 1, 1 };
-			SettingsManager.endlessOriginalHS = 7000f;
-			SettingsManager.endlessUpgradedHS = 7000f;
-			MoneyManager.money = 200000;
+			SettingsManager.endlessOriginalHS = 0f;
+			SettingsManager.endlessUpgradedHS = 0f;
+			MoneyManager.money = 2000;
 			SettingsManager.currBowSkin = "Wooden Bow";
 			SettingsManager.currBulletSkin = "Wooden Bullet";
 			SettingsManager.currFortressSkin = "Wooden Fortress";

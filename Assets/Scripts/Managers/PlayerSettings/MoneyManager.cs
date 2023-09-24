@@ -1,7 +1,7 @@
 using UnityEngine;
 public class MoneyManager {
 
-	public static int money = 2000; //cant be larger than 10000000;
+	public static int money = 2000;
 	public static void useMoney(int val) {
 		if (money > val) {
 			money = (int)Mathf.Floor(money - val);
