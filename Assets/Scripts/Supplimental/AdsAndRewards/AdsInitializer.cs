@@ -2,38 +2,38 @@ using UnityEngine;
 using UnityEngine.Advertisements;
 
 public class AdsInitializer : MonoBehaviour, IUnityAdsInitializationListener {
-  [SerializeField] string _androidGameId;
-  [SerializeField] string _iOSGameId;
-  [SerializeField] bool _testMode = true;
-  private string _gameId;
+	[SerializeField] string _androidGameId;
+	[SerializeField] string _iOSGameId;
+	[SerializeField] bool _testMode = true;
+	private string _gameId;
 
-  public static bool adsAvailable = false;
+	public static bool adsAvailable = false;
 
-  void Awake() {
-    InitializeAds();
-  }
+	void Awake() {
+		InitializeAds();
+	}
 
-  public void InitializeAds() {
+	public void InitializeAds() {
 #if UNITY_IOS
             _gameId = _iOSGameId;
 #elif UNITY_ANDROID
-    _gameId = _androidGameId;
+		_gameId = _androidGameId;
 #elif UNITY_EDITOR
             _gameId = _androidGameId; //Only for testing the functionality in the Editor
 #endif
-    if (!Advertisement.isInitialized && Advertisement.isSupported) {
-      Advertisement.Initialize(_gameId, _testMode, this);
-    }
-  }
+		if (!Advertisement.isInitialized && Advertisement.isSupported) {
+			Advertisement.Initialize(_gameId, _testMode, this);
+		}
+	}
 
 
-  public void OnInitializationComplete() {
-    Debug.Log("Unity Ads initialization complete.");
-    adsAvailable = true;
-  }
+	public void OnInitializationComplete() {
+		Debug.Log("Unity Ads initialization complete.");
+		adsAvailable = true;
+	}
 
-  public void OnInitializationFailed(UnityAdsInitializationError error, string message) {
-    Debug.Log($"Unity Ads Initialization Failed: {error.ToString()} - {message}");
-    adsAvailable = false;
-  }
+	public void OnInitializationFailed(UnityAdsInitializationError error, string message) {
+		Debug.Log($"Unity Ads Initialization Failed: {error.ToString()} - {message}");
+		adsAvailable = false;
+	}
 }
