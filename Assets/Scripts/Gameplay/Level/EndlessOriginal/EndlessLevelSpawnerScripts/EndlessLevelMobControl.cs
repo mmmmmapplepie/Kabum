@@ -52,7 +52,6 @@ public partial class EndlessLevelControl {
 			float value = (Time.time - EndlessStartTime);
 			frequency = Mathf.Pow((value - 250f) / 50f, 1.01f);
 		}
-		print(Time.time - EndlessStartTime + "with the frequency of: " + frequency);
 		return frequency;
 	}
 	async Task StartRandomWave(int difficulty) {
